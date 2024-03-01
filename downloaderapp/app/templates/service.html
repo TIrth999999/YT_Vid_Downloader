@@ -1,0 +1,17 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block content %}
+<h1>
+    this is your services
+</h1>
+<form method = "POST">
+{% csrf_token %}
+<label>Enter URL : </lable>
+    <input  type = "text" name="abc">
+    <br>
+<lable>Select Path : </lable>
+<input type = "text" name="path">
+<br>
+<button type="submit">Submit</button>
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "nav.html" %}
+{% load static %}
+{% block content %}
+
+
+
+<div class="row p-4 ">
+    {% for i in messages%}
+    <div class="alert position-relative mt-0 alert-warning alert-dismissible fade show" role="alert">
+        <strong>Success!</strong> {{i}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+        <!-- <script>alert("{{i}}")</script> -->
+    {% endfor %}
+    <h1 class="d-flex justify-content-center">welcome to my website</h1>
+    <div class="col-12">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, tempore autem. Quo incidunt,
+            temporibus error culpa magni tempore optio dolorem minima atque cum, minus quisquam eos tempora, facilis
+            maxime recusandae assumenda doloremque. Officia error quasi, et facilis maxime animi in ratione
+            accusamus maiores est eligendi illo placeat minus, sequi provident pariatur velit! Earum vitae corporis
+            iusto dicta ea distinctio, doloremque labore ratione aspernatur commodi cupiditate asperiores
+            voluptatibus nemo repellat cum cumque molestias suscipit nihil quod illum tempore! Perspiciatis expedita
+            nesciunt laudantium fugit ea asperiores perferendis reprehenderit voluptates maxime recusandae soluta
+            veritatis, incidunt iste necessitatibus id repellat quas tempore vero esse?</p>
+    </div>
+</div>
+{% endblock %}
